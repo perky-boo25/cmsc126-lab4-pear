@@ -488,6 +488,8 @@ body.about .definition {
     font-family: "Manjari";
     border-radius: 10px;
     height: 40px;
+    margin: 0 auto;
+    text-transform: uppercase;
 
 }
 
