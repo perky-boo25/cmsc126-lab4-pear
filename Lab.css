@@ -241,7 +241,7 @@ footer:last-child{
 }
 
 /* coffee text paragraphs */
-.definition {
+body.about .definition {
     text-align: center;
     color: #291C0E;
     padding: 10px;
