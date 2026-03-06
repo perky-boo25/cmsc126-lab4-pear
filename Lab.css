@@ -26,6 +26,7 @@
   font-style: normal;
 }
 
+/* ------------------------GLOBAL LAYOUT ----------------------------------------*/
 body{
     margin:0;
     background-color: #e1d4c2;
@@ -93,7 +94,7 @@ img#banner:not(.coffee img){
     object-fit:cover;
     object-position: center 40%;
     border-bottom: 2px solid #A78D78;
-    margin-top: -19px;
+    margin-top: -32px;
     margin-bottom: 10px;
 }
 
