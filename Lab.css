@@ -72,4 +72,125 @@ a.navigation:hover {
 }
 /* ----------------------- HOMEPAGE ---------------------------------------*/
 /* --------------------- ORDER PAGE ---------------------------------------*/
+
+/* tagline */
+#tagline {
+    text-align: center;
+    color: #291c0e;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* menu */
+.coffee h2 {
+    margin: 5px auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #291c0e;
+    padding: 15px 20px;
+    color: #e1d4c2;
+    width: 1360px;
+    border-radius: 10px;
+}
+
+/* coffee table */
+#coffee_choices {
+    margin: 0 auto;
+    width: 1400px;
+    border-spacing: 10px;
+    border-style: groove;
+    border-color: #291c0e;
+    border-radius: 10px;
+}
+
+/* coffee table cell */
+#coffee_choices td {
+    width: 200px;
+    height: 50px;
+}
+
+/* separator */
+#coffee_choices .coffeeTitle {
+    text-align: center;
+    background-color:#562e04;
+    color: #e1d4c2;
+    font-weight: bold;
+}
+
+/* coffee images */
+#coffee_choices .coffeeImg{
+    width: 200px;
+    max-width: 100%;
+    height: 150px;
+    display: block;
+    object-fit: cover;
+}
+
+/* coffee labels */
+#coffee_choices .label {
+    text-align: center;
+    font-size: 15px;
+    background-color:#e1d4c2;
+    color:#291c0e;
+    border-radius: 5px;
+
+}
+
+/* order form */
+.coffee form{
+    width: 700px;
+    padding: 30px;
+    text-align: center;
+    color:#291c0e;
+    margin: 40px auto;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: #291c0e;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* order form inputs */
+.coffee form input,
+.coffee form select {
+    color:#291c0e;
+    background-color:#e1d4c2;
+    border-color: #291c0e;
+    border-style: groove;
+
+    width: 350px;
+    height: 35px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+/* order button */
+.coffee form input[type="submit"] {
+    width: 120px;
+    height: 40px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    background-color:#291c0e;
+    color:#e1d4c2;
+
+    border-radius: 5px;
+    margin-top: 25px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* hover animation for button */
+.coffee form input[type="submit"]:hover {
+    background-color: #cbbca8;
+}
+
 /* --------------------- ABOUT PAGE ---------------------------------------*/
