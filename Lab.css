@@ -64,7 +64,7 @@ header h1{
     padding: 15px 60px;
     background-color:  #562e04;
     border-bottom: 2px solid black;
-    box-shadow: #000;
+    order: -1;
 }
 
 a.navigation{
@@ -87,17 +87,222 @@ a.navigation:hover {
     
 }
 
-#banner{
+img#banner:not(.coffee img){
     width:100%;
     height: 400px;
     object-fit:cover;
     object-position: center 40%;
     border-bottom: 2px solid #A78D78;
-    margin-top: -15px;
+    margin-top: -19px;
+    margin-bottom: 10px;
+}
+
+hr{
+    margin:15px;
+}
+a[href="#bottomPage"]{
+    display: inline-flex; 
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 9px 18px 9px 12px;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #6f4e37;
+    border: 1.5px solid #6f4e37;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s, transform 0.15s;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    }
+
+a[href="#bottomPage"]::before{
+    content: "↓";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background-color: #6f4e37;
+    color: #fffaf5;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+a[href="#bottomPage"]:hover{
+    background-color: #6f4e37;
+    color: #fffaf5;
+    transform: translateY(-2px);
+}
+
+a[href="#bottomPage"]:hover::before{
+    background-color: #fffaf5;
+    color: #6f4e37;
+}
+
+a[href="#title"]{
+    display: inline-flex; 
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 9px 18px 9px 12px;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #6f4e37;
+    border: 1.5px solid #6f4e37;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s, transform 0.15s;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    }
+
+a[href="#title"]::before{
+    content: "↑";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background-color: #6f4e37;
+    color: #fffaf5;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+a[href="#title"]:hover{
+    background-color: #6f4e37;
+    color: #fffaf5;
+    transform: translateY(-2px);
+}
+
+a[href="#title"]:hover::before{
+    background-color: #fffaf5;
+    color: #6f4e37;
+}
+
+footer{
+    text-align:center;
+    background-color: #291c0e;
+    margin: 0;
+    padding: 10px;
+    color:#e1d4c2;
+}
+
+footer p#title{
+    font-weight: bold;
+    font-family: Arial;
+    text-transform: uppercase;
+    padding:8px;
+    background-color:#562e04;
+    border-radius: 10px;
+}
+
+.contacts{
+    font-family: Arial;
+}
+
+footer:last-child{
+    text-transform: uppercase;
+    font-family: Arial Narrow;
+    font-size:5px;
 }
 /* ----------------------- HOMEPAGE ---------------------------------------*/
-/* --------------------- ORDER PAGE ---------------------------------------*/
 
+body.home {
+    font-family: Arial;
+    background-color: #f5efe6;
+    margin: 0;
+    padding: 0;
+    color: #3b2f2f;
+    line-height: 2;
+}
+
+
+.coffee {
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+ol {
+    font-family: Arial;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.coffee:nth-of-type(3) {
+    background-color: #6f4e37;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    color: #f5efe6;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 20px 20px;
+}
+
+.coffee:nth-of-type(5) {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+
+.definition {
+    font-size: 15px;
+    line-height: 2;
+}
+
+.emphasis {
+    font-weight: 600;
+    color: #f5efe6;
+}
+
+.coffee img {
+    display: block;
+    margin: auto;
+    width: 700px;
+    border-radius: 8px;
+}
+
+#orderCoffee {
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 80px;
+    font-family: Arial;
+    font-size: 22px;
+    background-color: #3b2f2f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 16px #3b2f2f;
+    transition: background-color 0.2s, transform 0.15s;
+}
+
+#orderCoffee:hover {
+    background-color: #3b2f2f;
+    transform: translateY(-2px);
+    text-decoration: none; 
+}
+
+/* --------------------- ORDER PAGE ---------------------------------------*/
 /* tagline */
 #tagline {
     text-align: center;
@@ -106,7 +311,6 @@ a.navigation:hover {
     margin-bottom: 20px;
     font-family: "DM Sans";
 }
-
 /* menu */
 .coffee h2 {
     margin: 5px auto;
@@ -226,3 +430,163 @@ a.navigation:hover {
 }
 
 /* --------------------- ABOUT PAGE ---------------------------------------*/
+
+/* coffee logo*/
+.coffee #banner {
+    width: 15%;
+    filter: sepia(100%);
+    display: block;
+    margin: 0 auto;
+    background: none;
+    mix-blend-mode: multiply;
+}
+
+/* coffee text paragraphs */
+body.about .definition {
+    text-align: center;
+    color: #291C0E;
+    padding: 10px;
+}
+
+/* about heading */
+.coffee #about {
+    width: 50%;
+    text-align: center;
+    color: #E1D4C2;
+    padding: 10px;
+}
+
+/* favorite songs */
+ul {
+    display: table;             
+    padding: 0;                
+    margin: 0 auto;                 
+    list-style: none;          
+    padding: 5px;
+}
+
+ul li {
+    display: table-cell;  
+    vertical-align: middle;  
+    width: auto;         
+    padding-right: 10px;
+    padding-left: 10px; 
+    margin: 0 auto;
+    
+}
+
+/* coffee videos */
+.coffeeVideo {
+    width: 100%;   
+    height: 100%;   
+}
+
+
+
+/* table with team members */
+table:has(.teamMember) {
+    width: 80%;                   
+    max-width: 1000px;              
+    border: 2px solid #291C0E;
+    border-collapse:separate;
+    background-color: #291C0E;
+    color: #E1D4C2;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* each cell in the first row (images) */
+table:has(.teamMember) tr:nth-of-type(1) td {
+    width: calc(100% / 6);        
+    padding: 5px;                
+}
+
+/* team member images */
+.teamMember {
+    width: 100px;
+    height: 100px;
+    border: 4px solid #291C0E;  
+    display: table-cell;
+    padding: 3px;
+    background-color: #A78D78;
+    margin: 0 auto;
+}
+
+
+/* labels under images */
+.label {
+    margin-top: 3px;
+    text-align: center;
+    color: #E1D4C2;         
+}
+
+
+
+/* 6th coffee div block */
+body.about .coffee:nth-of-type(6) {
+    display: table;       
+    background-color: #291C0E;
+    color: #E1D4C2;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;           
+    background-color: #291C0E; 
+    color: #E1D4C2;  
+    border-radius: 10px;
+
+}
+
+/* paragraphs in 6th coffee div block*/
+body.about .coffee:nth-of-type(6) .definition {
+    display: table-cell;  
+    vertical-align: top;  
+    width: auto;          
+    background-color: #291C0E; 
+    color: #E1D4C2;            
+}
+
+/* image in 6th coffee div */
+body.about .coffee:nth-of-type(6) img {
+    display: table-cell;  
+    vertical-align: middle;  
+    width: 129px;         
+    padding-right: 10px;
+    padding-left: 10px;  
+   
+}
+
+/* border to 5th, 7th, and 8th coffee div text blocks */
+body.about .coffee:nth-of-type(5),
+body.about .coffee:nth-of-type(7) {
+    width: 80%;
+    border: 2px solid #291C0E;  
+    padding: 20px;            
+    margin: 20px auto;        
+    background-color: #A78D78;   
+    border-radius: 10px;      
+}
+
+body.about .coffee:nth-of-type(8) {
+    width: 80%;
+    border: 2px solid #291C0E;  
+    padding: 20px;            
+    margin: 20px auto;        
+    background-color: #291c0e;   
+    border-radius: 10px;      
+}
+
+#bottomPage{
+    color:#E1D4C2;
+}
+
+
+
+.term {
+    font-weight: bold;
+}
+
+
+
