@@ -315,7 +315,7 @@ body.home .coffee img {
     font-family: "DM Sans";
 }
 /* menu */
-.coffee h2 {
+body.order .coffee h2 {
     margin: 5px auto;
     text-align: center;
     font-size: 40px;
@@ -375,11 +375,12 @@ body.home .coffee img {
 }
 
 /* order form */
-.coffee form{
+body.order .coffee form{
+    display: flex;
     width: 200px;
     padding: 30px;
     text-align: center;
-    color:#e1d4c2;
+    color:#291C0E;
     margin: 10px auto;
     border-radius: 10px;
     font-family: "DM Sans";
@@ -389,7 +390,7 @@ body.home .coffee img {
 }
 
 /* order form inputs */
-.coffee form input,
+body.order .coffee form input,
 .coffee form select {
     color:#291c0e;
     background-color:#e1d4c2;
@@ -407,7 +408,7 @@ body.home .coffee img {
 }
 
 /* order button */
-.coffee form input[type="submit"] {
+body.order .coffee form input[type="submit"] {
     width: 120px;
     height: 40px;
 
@@ -425,8 +426,8 @@ body.home .coffee img {
 }
 
 /* hover animation for button */
-.coffee form input[type="submit"]:hover {
-    background-color: #cbbca8;
+body.order .coffee form input[type="submit"]:hover {
+    background-color:#562e04;
 }
 
 /* --------------------- ABOUT PAGE ---------------------------------------*/
