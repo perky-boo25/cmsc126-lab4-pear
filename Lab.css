@@ -297,6 +297,9 @@ body.home .coffee img {
     border-radius: 8px;
 }
 
+a[href="order.html"] {
+    text-decoration: none;
+}
 
 #orderCoffee {
     text-decoration: none;
