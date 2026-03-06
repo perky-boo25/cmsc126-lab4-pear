@@ -298,7 +298,7 @@ body.home .coffee img {
 }
 
 
-a[href="order.html"]{
+#orderCoffee {
     text-decoration: none;
 }
 #orderCoffee {
