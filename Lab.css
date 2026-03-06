@@ -574,7 +574,7 @@ body.about .coffee:nth-of-type(8) {
     border-radius: 10px;      
 }
 
-#bottomPage{
+body.about #bottomPage{
     color:#E1D4C2;
 }
 
