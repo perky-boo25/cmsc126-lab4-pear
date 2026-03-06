@@ -458,12 +458,11 @@ body.about .definition {
     padding: 10px;
     border: #291C0E;
     background-color:#291C0E;
-    margin: 0 auto;
     font-size: 40px;
     font-weight: bold;
     font-family: "Manjari";
     border-radius: 10px;
-    line-height: 1.2; 
+    height: 40px;
 
 }
 
