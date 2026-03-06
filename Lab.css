@@ -1,6 +1,32 @@
 /* ------------------------IMPORTS ----------------------------------------*/
-/* --------------------- ANIMATIONS ---------------------------------------*/
-/* ---------------------GLOBAL LAYOUT---------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manjari:wght@100;400;700&display=swap');
+
+.dm-sans-font {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.manjari-thin {
+  font-family: "Manjari", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.manjari-regular {
+  font-family: "Manjari", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.manjari-bold {
+  font-family: "Manjari", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ------------------------GLOBAL LAYOUT ----------------------------------------*/
 body{
     margin:0;
     background-color: #e1d4c2;
@@ -10,16 +36,15 @@ header{
     background-color: #291c0e;
     padding: 35px 32px 5px;
     text-align: center;
-    
 }
 
 header h1{
     text-transform: uppercase;
-    font-family: Arial;
+    font-family:"Manjari";
     letter-spacing: 3px;
     font-size: 40px;
-    font-style: oblique;
     color: #e1d4c2;
+
 }
 
 #welcome{
@@ -28,8 +53,9 @@ header h1{
     font-size: 18px;
     line-height: 1.6;
     display: block;
-    max-width: 570px;
+    max-width: 700px;
     margin: 20px auto;
+    font-family: "DM Sans";
 }
 
 .navBar{
@@ -43,7 +69,7 @@ header h1{
 }
 
 a.navigation{
-    font-family: Georgia;
+    font-family: "DM sans";
     font-size: 15px;
     color: #000;
     text-decoration: none;
@@ -68,7 +94,7 @@ img#banner:not(.coffee img){
     object-fit:cover;
     object-position: center 40%;
     border-bottom: 2px solid #A78D78;
-    margin-top: -19px;
+    margin-top: -32px;
     margin-bottom: 10px;
 }
 
@@ -250,9 +276,9 @@ body.home .emphasis {
     color: #f5efe6;
 }
 
-.coffee img {
+body.home .coffee img {
     display: block;
-    margin: auto;
+    margin: 0 auto;
     width: 700px;
     border-radius: 8px;
 }
@@ -285,7 +311,8 @@ body.home .emphasis {
     text-align: center;
     color: #291c0e;
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
+    font-family: "DM Sans";
 }
 /* menu */
 .coffee h2 {
@@ -293,8 +320,9 @@ body.home .emphasis {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
+    font-family: "Manjari";
     background-color: #291c0e;
-    padding: 15px 20px;
+    padding: 20px;
     color: #e1d4c2;
     width: 1360px;
     border-radius: 10px;
@@ -322,6 +350,8 @@ body.home .emphasis {
     background-color:#562e04;
     color: #e1d4c2;
     font-weight: bold;
+    font-family: "DM Sans";
+    text-transform: uppercase;
 }
 
 /* coffee images */
@@ -337,6 +367,7 @@ body.home .emphasis {
 #coffee_choices .label {
     text-align: center;
     font-size: 15px;
+    font-family: "DM Sans";
     background-color:#e1d4c2;
     color:#291c0e;
     border-radius: 5px;
@@ -345,15 +376,13 @@ body.home .emphasis {
 
 /* order form */
 .coffee form{
-    width: 700px;
+    width: 200px;
     padding: 30px;
     text-align: center;
-    color:#291c0e;
-    margin: 40px auto;
-    border-style: groove;
+    color:#e1d4c2;
+    margin: 10px auto;
     border-radius: 10px;
-    border-color: #291c0e;
-
+    font-family: "DM Sans";
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -374,6 +403,7 @@ body.home .emphasis {
 
     font-size: 14px;
     padding-left: 10px;
+    font-family: "DM Sans";
 }
 
 /* order button */
@@ -408,10 +438,11 @@ body.home .emphasis {
     display: block;
     margin: 0 auto;
     background: none;
+    mix-blend-mode: multiply;
 }
 
 /* coffee text paragraphs */
-.definition {
+body.about .definition {
     text-align: center;
     color: #291C0E;
     padding: 10px;
@@ -427,17 +458,21 @@ body.home .emphasis {
 
 /* favorite songs */
 ul {
-    display: flex;            
-    gap: 20px;                 
-    justify-content: center;   
+    display: table;             
     padding: 0;                
-    margin: 1;                 
+    margin: 0 auto;                 
     list-style: none;          
     padding: 5px;
 }
 
 ul li {
-    flex: 0 0 auto;
+    display: table-cell;  
+    vertical-align: middle;  
+    width: auto;         
+    padding-right: 10px;
+    padding-left: 10px; 
+    margin: 0 auto;
+    
 }
 
 /* coffee videos */
@@ -460,6 +495,7 @@ table:has(.teamMember) {
     margin: 0 auto;
     padding: 15px;
     margin-top: 15px;
+    border-radius: 10px;
 }
 
 /* each cell in the first row (images) */
@@ -473,16 +509,14 @@ table:has(.teamMember) tr:nth-of-type(1) td {
     width: 100px;
     height: 100px;
     border: 4px solid #291C0E;  
-    display: block;
     padding: 3px;
     background-color: #A78D78;
-    margin: 0 auto;
 }
 
 
 /* labels under images */
 .label {
-    margin-top: 3px;
+    margin: 3px auto;
     text-align: center;
     color: #E1D4C2;         
 }
@@ -542,11 +576,14 @@ body.about .coffee:nth-of-type(8) {
     border-radius: 10px;      
 }
 
-#bottomPage{
+body.about #bottomPage{
     color:#E1D4C2;
 }
 
-
+body.about .coffee .definition .emphasis{
+    font-weight: bold;
+    color:#291c0e
+}
 
 .term {
     font-weight: bold;
