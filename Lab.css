@@ -283,8 +283,10 @@ body.home .coffee img {
     border-radius: 8px;
 }
 
-#orderCoffee {
+a[href="order.html"]{
     text-decoration: none;
+}
+#orderCoffee {
     display: block;
     margin: 20px auto;
     padding: 14px 80px;
