@@ -1,6 +1,138 @@
 /* ------------------------IMPORTS ----------------------------------------*/
 /* --------------------- ANIMATIONS ---------------------------------------*/
 /* ---------------------GLOBAL LAYOUT---------------------------------------*/
+
+body.about {
+    background-color: #E1D4C2; 
+}
+
 /* ----------------------- HOMEPAGE ---------------------------------------*/
 /* --------------------- ORDER PAGE ---------------------------------------*/
 /* --------------------- ABOUT PAGE ---------------------------------------*/
+
+/* coffee logo*/
+.coffee #banner {
+    width: 15%;
+    filter: sepia(100%);
+    display: block;
+    margin: 0 auto;
+    background: none;
+}
+
+/* coffee text paragraphs */
+.definition {
+    text-align: center;
+    color: #291C0E;
+    padding: 10px;
+}
+
+/* about heading */
+.coffee #about {
+    text-align: center;
+    color: #291C0E;
+    padding: 10px;
+}
+
+/* favorite songs */
+ul {
+    display: flex;            
+    gap: 20px;                 
+    justify-content: center;   
+    padding: 0;                
+    margin: 1;                 
+    list-style: none;          
+    padding: 5px;
+}
+
+ul li {
+    flex: 0 0 auto;
+}
+
+/* coffee videos */
+.coffeeVideo {
+    width: 100%;   
+    height: 100%;   
+}
+
+
+
+/* table with team members */
+table:has(.teamMember) {
+    width: 90%;                   
+    max-width: 1000px;              
+    border: 2px solid #291C0E;
+    border-collapse:separate;
+    background-color: #291C0E;
+    color: #E1D4C2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* each cell in the first row (images) */
+table:has(.teamMember) tr:nth-of-type(1) td {
+    width: calc(100% / 6);        
+    padding: 5px;                
+}
+
+/* team member images */
+.teamMember {
+    width: 100px;
+    height: 100px;
+    border: 4px solid #291C0E;  
+    display: block;
+    padding: 3px;
+    background-color: #A78D78;
+}
+
+
+/* labels under images */
+.label {
+    margin-top: 3px;
+    text-align: center;
+    color: #E1D4C2;         
+}
+
+
+
+/* 6th coffee div block */
+body.about .coffee:nth-of-type(6) {
+    display: table;       
+    border: 2px #291C0E;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;           
+    background-color: #291C0E; 
+    color: #E1D4C2;  
+
+}
+
+/* paragraphs in 6th coffee div block*/
+body.about .coffee:nth-of-type(6) .definition {
+    display: table-cell;  
+    vertical-align: top;  
+    width: auto;          
+    background-color: #291C0E; 
+    color: #E1D4C2;            
+}
+
+/* image in 6th coffee div */
+body.about .coffee:nth-of-type(6) img {
+    display: table-cell;  
+    vertical-align: center;  
+    width: 129px;         
+    padding-right: 10px;
+    padding-left: 10px;  
+   
+}
+
+/* border to 5th, 7th, and 8th coffee div text blocks */
+body.about .coffee:nth-of-type(5),
+body.about .coffee:nth-of-type(7),
+body.about .coffee:nth-of-type(8) {
+    width: 80%;
+    border: 2px solid #291C0E;  
+    padding: 20px;            
+    margin: 20px auto;        
+    background-color: #A78D78;         
+}
+
