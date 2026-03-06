@@ -317,7 +317,7 @@ a[href="order.html"]{
     font-family: "DM Sans";
 }
 /* menu */
-.coffee h2 {
+body.order .coffee h2 {
     margin: 5px auto;
     text-align: center;
     font-size: 40px;
@@ -377,11 +377,11 @@ a[href="order.html"]{
 }
 
 /* order form */
-.coffee form{
+body.order .coffee form{
     width: 200px;
     padding: 30px;
     text-align: center;
-    color:#e1d4c2;
+    color:#291C0E;
     margin: 10px auto;
     border-radius: 10px;
     font-family: "DM Sans";
@@ -391,7 +391,7 @@ a[href="order.html"]{
 }
 
 /* order form inputs */
-.coffee form input,
+body.order .coffee form input,
 .coffee form select {
     color:#291c0e;
     background-color:#e1d4c2;
@@ -409,7 +409,7 @@ a[href="order.html"]{
 }
 
 /* order button */
-.coffee form input[type="submit"] {
+body.order .coffee form input[type="submit"] {
     width: 120px;
     height: 40px;
 
@@ -427,7 +427,7 @@ a[href="order.html"]{
 }
 
 /* hover animation for button */
-.coffee form input[type="submit"]:hover {
+body.order .coffee form input[type="submit"]:hover {
     background-color: #cbbca8;
 }
 
