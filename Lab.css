@@ -46,6 +46,9 @@ header h1{
     color: #e1d4c2;
 
 }
+p{
+    font-family: "DM Sans";
+}
 
 #welcome{
     text-align: center;
