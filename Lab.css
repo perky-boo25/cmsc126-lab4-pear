@@ -39,6 +39,7 @@ header h1{
     padding: 15px 60px;
     background-color:  #562e04;
     border-bottom: 2px solid black;
+    order: -1;
 }
 
 a.navigation{
@@ -67,19 +68,106 @@ img#banner:not(.coffee img){
     object-fit:cover;
     object-position: center 40%;
     border-bottom: 2px solid #A78D78;
-    margin-top: -18px;
+    margin-top: -19px;
     margin-bottom: 10px;
 }
 
+hr{
+    margin:15px;
+}
 a[href="#bottomPage"]{
+    display: inline-flex; 
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 9px 18px 9px 12px;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     text-decoration: none;
-    padding: 5px 10px;
-    background-color: #e1d4c2;
-    margin: 10px;
-    color:brown;
-    border: 1px solid #000;
-    border-radius: 10px;
+    color: #6f4e37;
+    border: 1.5px solid #6f4e37;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s, transform 0.15s;
+    margin-left: 10px;
+    margin-bottom: 10px;
     }
+
+a[href="#bottomPage"]::before{
+    content: "↓";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background-color: #6f4e37;
+    color: #fffaf5;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+a[href="#bottomPage"]:hover{
+    background-color: #6f4e37;
+    color: #fffaf5;
+    transform: translateY(-2px);
+}
+
+a[href="#bottomPage"]:hover::before{
+    background-color: #fffaf5;
+    color: #6f4e37;
+}
+
+a[href="#title"]{
+    display: inline-flex; 
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 9px 18px 9px 12px;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #6f4e37;
+    border: 1.5px solid #6f4e37;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s, transform 0.15s;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    }
+
+a[href="#title"]::before{
+    content: "↑";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background-color: #6f4e37;
+    color: #fffaf5;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+a[href="#title"]:hover{
+    background-color: #6f4e37;
+    color: #fffaf5;
+    transform: translateY(-2px);
+}
+
+a[href="#title"]:hover::before{
+    background-color: #fffaf5;
+    color: #6f4e37;
+}
 
 footer{
     text-align:center;
