@@ -2,5 +2,87 @@
 /* --------------------- ANIMATIONS ---------------------------------------*/
 /* ---------------------GLOBAL LAYOUT---------------------------------------*/
 /* ----------------------- HOMEPAGE ---------------------------------------*/
+
+body.home {
+    font-family: Arial;
+    background-color: #f5efe6;
+    margin: 0;
+    padding: 0;
+    color: #3b2f2f;
+    line-height: 2;
+}
+
+
+.coffee {
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+ol {
+    font-family: Arial;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.coffee:nth-of-type(3) {
+    background-color: #6f4e37;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    color: #f5efe6;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 20px 20px;
+}
+
+.coffee:nth-of-type(5) {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+
+.definition {
+    font-size: 15px;
+    line-height: 2;
+}
+
+.emphasis {
+    font-weight: 600;
+    color: #f5efe6;
+}
+
+.coffee img {
+    display: block;
+    margin: auto;
+    width: 700px;
+    border-radius: 8px;
+}
+
+#orderCoffee {
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 80px;
+    font-family: Arial;
+    font-size: 22px;
+    background-color: #3b2f2f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 16px #3b2f2f;
+    transition: background-color 0.2s, transform 0.15s;
+}
+
+#orderCoffee:hover {
+    background-color: #3b2f2f;
+    transform: translateY(-2px);
+    text-decoration: none; 
+}
+
 /* --------------------- ORDER PAGE ---------------------------------------*/
 /* --------------------- ABOUT PAGE ---------------------------------------*/
+
