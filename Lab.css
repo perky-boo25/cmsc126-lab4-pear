@@ -241,7 +241,7 @@ body.home {
 
 body.home .coffee {
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 50px 20px;
 }
 
 body.home .coffee:nth-of-type(2) h2 {
@@ -308,10 +308,9 @@ a[href="order.html"] {
     text-decoration: none;
 }
 
+
 #orderCoffee {
     text-decoration: none;
-}
-#orderCoffee {
     display: block;
     margin: 20px auto;
     padding: 14px 80px;
