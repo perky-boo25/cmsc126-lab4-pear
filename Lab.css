@@ -39,7 +39,6 @@ header h1{
     padding: 15px 60px;
     background-color:  #562e04;
     border-bottom: 2px solid black;
-    box-shadow: #000;
 }
 
 a.navigation{
@@ -68,7 +67,55 @@ a.navigation:hover {
     object-fit:cover;
     object-position: center 40%;
     border-bottom: 2px solid #A78D78;
-    margin-top: -15px;
+    margin-top: -18px;
+    margin-bottom: 10px;
+}
+
+a[href="#bottomPage"]{
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #e1d4c2;
+    margin: 10px;
+    color:brown;
+    border: 1px solid #000;
+    border-radius: 10px;
+    }
+
+a[href="#title"]{
+    text-decoration: none;
+    padding:5px 10px;
+    background-color: #e1d4c2;
+    margin: 6px;
+    color:brown;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+footer{
+    text-align:center;
+    background-color: #291c0e;
+    margin: 0;
+    padding: 10px;
+    color:#e1d4c2;
+}
+
+footer p#title{
+    font-weight: bold;
+    font-family: Arial;
+    text-transform: uppercase;
+    padding:8px;
+    background-color:#562e04;
+    border-radius: 10px;
+}
+
+.contacts{
+    font-family: Arial;
+}
+
+footer:last-child{
+    text-transform: uppercase;
+    font-family: Arial Narrow;
+    font-size:5px;
 }
 /* ----------------------- HOMEPAGE ---------------------------------------*/
 /* --------------------- ORDER PAGE ---------------------------------------*/
