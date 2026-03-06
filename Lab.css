@@ -308,7 +308,7 @@ ol {
     text-align: center;
     color: #291c0e;
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     font-family: "DM Sans";
 }
 /* menu */
@@ -373,16 +373,13 @@ ol {
 
 /* order form */
 .coffee form{
-    width: 700px;
+    width: 200px;
     padding: 30px;
     text-align: center;
-    color:#291c0e;
-    margin: 40px auto;
-    border-style: groove;
+    color:#e1d4c2;
+    margin: 10px auto;
     border-radius: 10px;
-    border-color: #291c0e;
     font-family: "DM Sans";
-
     display: flex;
     flex-direction: column;
     align-items: center;
