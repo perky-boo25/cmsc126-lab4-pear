@@ -32,6 +32,10 @@ body{
     background-color: #e1d4c2;
 }
 
+h2{
+    text-transform: uppercase;
+}
+
 header{
     background-color: #291c0e;
     padding: 35px 32px 5px;
@@ -216,7 +220,7 @@ footer p#title{
 }
 
 .contacts{
-    font-family: Arial;
+    font-family: "DM Sans";
 }
 
 footer:last-child{
@@ -483,6 +487,8 @@ body.about .definition {
     font-family: "Manjari";
     border-radius: 10px;
     height: 40px;
+    margin: 0 auto;
+    text-transform: uppercase;
 
 }
 
@@ -490,7 +496,7 @@ body.about .definition {
 ul {
     display: table;             
     padding: 0;                
-    margin: 0 auto;                 
+    margin: 15px auto;                 
     list-style: none;          
     padding: 5px;
 }
