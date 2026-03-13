@@ -161,8 +161,8 @@ hr{
 a[href="#bottomPage"]{
     display: inline-flex; 
     align-self: flex-start;
-    gap: 8px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 10px;
     padding: 9px 18px 9px 12px;
     font-family: 'DM Sans', Arial, sans-serif;
     font-size: 12px;
@@ -358,7 +358,7 @@ a[href="order.html"] {
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 0 4px 16px #3b2f2f;
-    transition: background-color 0.2s, transform 0.15s;
+    transition: transform 0.15s;
 }
 
 #orderCoffee:hover {
