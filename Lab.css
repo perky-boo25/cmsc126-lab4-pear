@@ -38,18 +38,25 @@ h2{
 
 header{
     background-color: #291c0e;
-    padding: 35px 32px 5px;
+    padding: 10px 32px 5px;
     text-align: center;
 }
-
+header hr {
+    margin: 0 0 0 0;
+    display:none;
+}
 header h1{
     text-transform: uppercase;
     font-family:"Manjari";
     letter-spacing: 3px;
     font-size: 40px;
     color: #e1d4c2;
-
 }
+
+body.home > hr {
+    margin: 0;
+}
+
 p{
     font-family: "DM Sans";
 }
@@ -65,6 +72,42 @@ p{
     font-family: "DM Sans";
 }
 
+body.home {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    color: #3b2f2f;
+    line-height: 2;
+    font-family: Arial;
+}
+
+body.home header                { order: 1; }
+body.home .navBar               { order: 2; }
+body.home img#banner            { order: 3; }
+body.home a[href="#bottomPage"] { order: 4; }
+body.home > hr                  { order: 5; }
+body.home #welcome              { order: 6; }
+body.home > br                  { order: 7; }
+body.home .coffee               { order: 8; }
+body.home > a[href="order.html"]{ order: 9; }
+body.home > footer              { order: 10; } 
+
+body.home > br,
+body.order > br,
+body.about > br { display: none; }
+body.home header { 
+    margin-top: 0;
+    padding: 27px 32px 7px;
+}
+
+body.home header h1 {
+    margin: 0;
+}
+
+body.home .navBar {
+    line-height: normal;
+}
 .navBar{
     display:flex;
     justify-content: flex-end;
@@ -72,7 +115,13 @@ p{
     padding: 15px 60px;
     background-color:  #562e04;
     border-bottom: 2px solid black;
-    order: -1;
+    margin-bottom: 0;
+}
+
+img#banner:not(.coffee img) {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
 }
 
 a.navigation{
@@ -101,8 +150,9 @@ img#banner:not(.coffee img){
     object-fit:cover;
     object-position: center 40%;
     border-bottom: 2px solid #A78D78;
-    margin-top: -32px;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
 }
 
 hr{
@@ -110,7 +160,7 @@ hr{
 }
 a[href="#bottomPage"]{
     display: inline-flex; 
-    align-items: center;
+    align-self: flex-start;
     gap: 8px;
     margin-top: 20px;
     padding: 9px 18px 9px 12px;
@@ -224,19 +274,10 @@ footer p#title{
 }
 
 footer:last-child{
-    text-transform: uppercase;
     font-family: Arial Narrow;
-    font-size:5px;
+    font-size:13px;
 }
 /* ----------------------- HOMEPAGE ---------------------------------------*/
-
-body.home {
-    font-family: Arial;
-    margin: 0;
-    padding: 0;
-    color: #3b2f2f;
-    line-height: 2;
-}
 
 
 body.home .coffee {
